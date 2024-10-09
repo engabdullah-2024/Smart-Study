@@ -11,10 +11,11 @@ const Header = () => {
           <FaBook className="text-white sm:text-4xl mr-2 mt-1" /> {/* Logo Icon */}
         <Link to="/">  <h1 className="text-white sm:text-3xl font-bold ">Smart Study </h1> </Link> {/* Website Name */}
         </div>
-        <nav className="flex space-x-6">
+        <nav className="flex space-x-4">
           <Link to="/" className="text-white sm:text-lg hover:underline">Home</Link>
           <Link to="/about" className="text-white sm:text-lg hover:underline">About</Link>
           <Link to="/contact" className="text-white sm:text-lg hover:underline">Contact</Link>
+          <Link to="/blogpage" className="text-white sm:text-lg hover:underline">Blog</Link>
         </nav>
       </div>
     </header>
