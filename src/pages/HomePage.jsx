@@ -6,6 +6,7 @@ import English from '../images/English.jpeg'; // Correct import path
 import Bio from '../images/Bio.jpg'; // Correct import path
 import Chemistry from '../images/Chemistry.jpg'; // Correct import path
 import Business from '../images/Business.jpg'; // Correct import path
+import Taariikh from '../images/Taariikh.jpg'; // Correct import path
 
 const HomePage = () => {
   const subjects = [
@@ -18,6 +19,11 @@ const HomePage = () => {
       name: "Carabi",
       image: Carabi,
       pdf: "/pdf/Arabic.pdf",
+    },
+    {
+      name: "Taaiikh",
+      image: Taariikh,
+      pdf: "/pdf/Taariikh.pdf",
     },
     {
       name: "Physics",
