@@ -30,6 +30,16 @@ const BlogPage = () => {
       excerpt: 'Time management is crucial for students to balance their studies, extracurricular activities, and personal life...',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVeNh3dZd_9T3sv3BLy8WaFpofVVM8relVlg&s', // Placeholder image
     },
+    {
+      id: 4,
+      title: 'How to be A+ in your class?',
+      author: 'Eng Abdalla',
+      date: 'October 10, 2024',
+      time: '05:51 AM',
+      excerpt: 'To be an A+ student, start by staying organized and planning your study time effectively. Engage actively in class by asking questions and participating in discussions. Focus on studying smart by using effective techniques like spaced repetition. When you encounter challenges, don’t hesitate to seek help from teachers or classmates. Lastly, maintain a healthy balance by getting enough sleep and taking care of your well-being. Consistency and a positive mindset will help you achieve top grades.',
+   
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVeNh3dZd_9T3sv3BLy8WaFpofVVM8relVlg&s', // Placeholder image
+    },
   ]);
 
   const [newPost, setNewPost] = useState({
