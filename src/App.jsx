@@ -6,6 +6,8 @@ import AboutPage from './pages/AboutPage'; // Import the AboutPage component
 import ContactPage from './pages/ContactPage'; // Import the ContactPage component
 import Footer from './components/Footer';
 import BlogPage from './components/BlogPage';
+import LoginPage from './pages/LoginPage';
+import DashboardPage from './pages/DashboardPage';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blogpage" element={<BlogPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
         </Routes>
       </div>
       <Footer/>
