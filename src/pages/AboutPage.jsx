@@ -1,11 +1,19 @@
-import React from 'react';
+// AboutPage.js
+import React, { useEffect } from 'react';
 import { FaProjectDiagram, FaSmile, FaBullseye, FaHandsHelping, FaUserCircle, FaStar } from 'react-icons/fa'; 
 import aniga from "../images/aniga.jpg";
+import Muscab from "../images/Muscab.jpg";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS styles
 
 const AboutPage = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Initialize AOS
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8">
-      <div className='animate-slideInDown'> 
+      <div data-aos="fade-down">
         <h1 className="text-4xl font-bold text-center text-white">About Smart Study</h1>
         <p className="mt-4 text-center text-white">
           Smart Study is a dedicated platform for Grade 12 students to access free PDF resources
@@ -17,8 +25,8 @@ const AboutPage = () => {
       </div>
 
       {/* Developer Section */}
-      <h2 className="text-2xl font-semibold mt-8 text-center text-white">About the Developer</h2>
-      <div className="flex items-center justify-center mt-4 animate-slideInDown">
+      <h2 className="text-2xl font-semibold mt-8 text-center text-white">About the Developer/Director</h2>
+      <div className="flex items-center justify-center mt-4" data-aos="fade-up">
         <div className="bg-gray-800 rounded-lg shadow-lg p-6 max-w-lg flex flex-col items-center">
           <img 
             className="w-40 h-40 max-w-full transition-transform transform hover:scale-110 hover:rotate-3 hover:shadow-lg duration-300 rounded-full border-4 border-orange-500" 
@@ -26,11 +34,14 @@ const AboutPage = () => {
             alt="Developer Illustration" 
           />
           <div className="text-white text-center mt-4">
-            <p className="mb-2">
-              I am a Grade 12 student with a passion for web development and design. As a fullstack developer,
-              I have worked on various projects, honing my skills in both frontend and backend technologies. 
-              I designed and managed this website to create a valuable resource for my peers, 
-              helping them access essential educational materials efficiently.
+            <h2 
+              className="text-2xl font-semibold mt-8 text-center text-white border-b-4 border-orange-500 inline-block pb-2"
+            >
+              Abdullah Ali Nor
+            </h2>
+            <p className="mb-2 mt-5">
+              Hello! I am a Grade 12 student with a passion for technology and innovation. As the manager of Smart Study, I lead and inspire students to leverage smart tools for effective learning and academic success.
+              Beyond academics, I am a dedicated full-stack developer, building seamless and functional applications, combining both frontend and backend expertise. With a creative eye for detail, I also specialize as a UI/UX designer.
             </p>
             <ul className="mt-2 list-disc list-inside text-left">
               <li>Grade 12 Student</li>
@@ -42,37 +53,39 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        {/* Box for 40+ Projects */}
-        <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center animate-slideInLeft transition-transform transform hover:scale-105 duration-300">
-          <FaProjectDiagram className="text-6xl text-green-500 mb-4" />
-          <h2 className="text-3xl font-bold">40+ Projects</h2>
-          <p className="text-gray-700 text-center mt-2">
-            Our team has completed over 40 projects, helping students access high-quality educational content.
-          </p>
-        </div>
-
-        {/* Box for 100+ Happy Clients */}
-        <div className="bg-white rounded-lg shadow-lg p-8 flex flex-col items-center animate-slideInRight transition-transform transform hover:scale-105 duration-300">
-          <FaSmile className="text-6xl text-yellow-500 mb-4" />
-          <h2 className="text-3xl font-bold">100+ Happy Clients</h2>
-          <p className="text-gray-700 text-center mt-2">
-            We are proud to have served over 100 happy clients with our dedication and commitment to quality.
-          </p>
+      {/* Manager Section */}
+      <h2 className="text-2xl font-semibold mt-8 text-center text-white">About the Manager Hub</h2>
+      <div className="flex items-center justify-center mt-4" data-aos="fade-up">
+        <div className="bg-gray-800 rounded-lg shadow-lg p-6 max-w-lg flex flex-col items-center">
+          <img 
+            className="w-40 h-40 max-w-full transition-transform transform hover:scale-110 hover:rotate-3 hover:shadow-lg duration-300 rounded-full border-4 border-orange-500" 
+            src={Muscab} 
+            alt="Manager Illustration" 
+          />
+          <div className="text-white text-center mt-4">
+            <h2 
+              className="text-2xl font-semibold mt-8 text-center text-white border-b-4 border-orange-500 inline-block pb-2"
+            >
+              Muscab Mohamed Abdullah
+            </h2>
+            <p className="mb-2 mt-5">
+              Muscab Mohamed Abdullah serves as the Manager Hub at Smart Study, overseeing operations and project management. He is certified in essential computer skills, equipping him with the tools necessary for effective management. His friendship with the Director fosters a collaborative environment, enhancing teamwork and driving success.
+            </p>
+          </div>
         </div>
       </div>
 
       {/* Vision and Mission Section */}
-      <h2 className="text-2xl font-semibold mt-12 text-center text-white">Our Vision and Mission</h2>
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-8 ">
-        <div className="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
-          <FaBullseye className="text-6xl text-blue-500 mb-4 " />
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div data-aos="fade-right" className="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
+          <FaBullseye className="text-6xl text-blue-500 mb-4" />
           <h3 className="text-3xl font-bold text-white">Our Vision</h3>
           <p className="text-gray-300 text-center mt-2">
             To empower every student with the knowledge and resources they need to excel academically and achieve their dreams.
           </p>
         </div>
-        <div className="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
+
+        <div data-aos="fade-left" className="bg-gray-800 rounded-lg shadow-lg p-8 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
           <FaHandsHelping className="text-6xl text-purple-500 mb-4" />
           <h3 className="text-3xl font-bold text-white">Our Mission</h3>
           <p className="text-gray-300 text-center mt-2">
@@ -80,57 +93,8 @@ const AboutPage = () => {
           </p>
         </div>
       </div>
-
-      {/* Testimonials Section */}
-      <h2 className="text-2xl font-semibold mt-12 text-center text-white">Testimonials</h2>
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-8 ">
-        <div className="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
-          <FaUserCircle className="text-4xl text-blue-400 mb-2" />
-          <p className="text-gray-300 italic">"Smart Study  has been a game changer for my studies! The resources are top-notch and easy to access." - Student A</p>
-          <div className="flex mt-2">
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-gray-400" />
-          </div>
-        </div>
-        <div className="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
-          <FaUserCircle className="text-4xl text-blue-400 mb-2" />
-          <p className="text-gray-300 italic">"I love how user-friendly the site is. It's made my study sessions much more productive!" - Student B</p>
-          <div className="flex mt-2">
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-gray-400" />
-          </div>
-        </div>
-        <div className="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
-          <FaUserCircle className="text-4xl text-blue-400 mb-2" />
-          <p className="text-gray-300 italic">"The variety of subjects available is fantastic! I found everything I needed in one place." - Student C</p>
-          <div className="flex mt-2">
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-          </div>
-        </div>
-        <div className="bg-gray-800 rounded-lg shadow-lg p-6 flex flex-col items-center transition-transform transform hover:scale-105 duration-300">
-          <FaUserCircle className="text-4xl text-blue-400 mb-2" />
-          <p className="text-gray-300 italic">"This platform is a lifesaver for any student. Highly recommended!" - Student D</p>
-          <div className="flex mt-2">
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-            <FaStar className="text-yellow-400" />
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
 
-export default AboutPage
+export default AboutPage;

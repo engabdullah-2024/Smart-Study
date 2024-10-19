@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import BlogPage from './components/BlogPage';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
+import QuizPage from './pages/QuizPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/blogpage" element={<BlogPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/quiz" element={<QuizPage />} />
         </Routes>
       </div>
       <Footer/>
