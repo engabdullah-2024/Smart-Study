@@ -33,7 +33,7 @@ ChartJS.register(
 const Dashboard = () => {
   // Sample data for the charts
   const barData = {
-    labels: ['Tarbiyo', 'Carabi', 'Taariikh', 'Physics', 'English', 'Biology', 'Chemistry', 'Business'],
+    labels: ['Tarbiyo', 'Carabi', 'Taariikh', 'Physics', 'English', 'Somali',  'Business'],
     datasets: [
       {
         label: 'Total Downloads',

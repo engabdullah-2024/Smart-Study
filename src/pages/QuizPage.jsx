@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 
 // Questions for each subject
 const subjectsWithQuestions = {
+  somali: [
+    { question: 'Micnaha Erayga Wadaay Waa?', options: ['Nin', 'Diraac', 'Abaar', 'Saaxiib'], answer: 'Saaxiib' },
+    { question: 'Micnaha Erayga Dingaraaro Waa?', options: ['Qof la sigay', 'Qof aan la sigin', 'Dabar', 'Midna'], answer: 'Qof la sigay' },
+    { question: 'Micnaha Erayga Raar Waa?', options: ['Sibraar', 'Guran', 'Buurta Gunteeda Hoose', 'Midna'], answer: 'Buurta Gunteeda Hoose' },
+    { question: 'Ili il ma', options: ['Dhugato', 'Dheehato', 'Ma giigsana', 'dhowrto'], answer: 'dhowrto' },
+    { question: 'Micnaha Erayga Amakaag Waa?', options: ['Askun', 'Yaab', 'Guntin', 'Midna'], answer: 'Yaab' },
+   
+  ],
   Physics: [
     { question: 'What is the unit of resistance?', options: ['Ohm', 'Watt', 'Volt', 'Ampere'], answer: 'Ohm' },
     { question: 'What is Newton’s second law of motion?', options: ['F = ma', 'E = mc²', 'V = IR', 'W = mg'], answer: 'F = ma' },
@@ -126,7 +134,7 @@ const QuizPage = () => {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 p-4">
-      <h1 className="text-3xl font-bold mb-6">Quiz App</h1>
+      <h1 className="text-3xl font-bold mb-6 hover:text-blue-500">Choose The Correct Answer</h1>
       {!selectedSubject ? (
         <div className="bg-white p-4 rounded shadow-md text-center">
           <h2 className="text-2xl font-semibold mb-4">Select a Subject</h2>

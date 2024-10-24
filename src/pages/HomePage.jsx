@@ -27,7 +27,7 @@ const HomePage = () => {
     link.href = subject.pdf;
     link.download = subject.name;
     link.click();
-    toast.success('Successfully downloaded');
+    toast.success('Successfully downloaded')
   };
 
   const handleSubjectClick = (subject) => {
@@ -35,7 +35,7 @@ const HomePage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8">
+    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8  ">
       <Toaster />
 
       {/* Header Section */}

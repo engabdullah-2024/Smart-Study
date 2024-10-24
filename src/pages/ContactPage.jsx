@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const ContactPage = () => {
   return (
-    <div className="min-h-screen  bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8">
+    <div className="min-h-screen  bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8 mt-10">
       <h1 className="text-4xl font-bold text-center text-white">Contact Us</h1>
       <p className="text-xl mt-4 text-center text-white">
         Reach out to us for any inquiries or assistance!
@@ -35,4 +35,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactPage;
