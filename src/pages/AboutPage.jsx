@@ -12,7 +12,7 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8 mt-[50%] sm:mt-0">
+    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8">
       <div data-aos="fade-down">
         <h1 className="text-4xl font-bold text-center text-white">About Smart Study</h1>
         <p className="mt-4 text-center text-white">
