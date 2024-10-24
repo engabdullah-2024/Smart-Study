@@ -8,6 +8,7 @@ import English from '../images/English.jpeg';
 import Business from '../images/Business.jpg';
 import Taariikh from '../images/Taariikh.jpg';
 import Somali from '../images/Somali.jpg';
+import Bio from '../images/Bio.jpg';
 
 const HomePage = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
@@ -20,6 +21,7 @@ const HomePage = () => {
     { name: "Physics", image: Physics, pdf: "/pdf/Physics.pdf", description: "Physics explains the fundamental laws of nature and the universe." },
     { name: "English", image: English, pdf: "/pdf/English.pdf", description: "English helps students develop communication skills in the English language." },
     { name: "Business", image: Business, pdf: "/pdf/Business.pdf", description: "Business introduces students to economics, entrepreneurship, and finance." },
+    { name: "Biology", image: Bio, pdf: "/pdf/Biology.pdf", description: " introduces students to the study of living organisms, their structure, function, growth, and evolution." },
   ];
 
   const handleDownload = (subject) => {
