@@ -33,7 +33,7 @@ const Header = () => {
         <nav
           className={`${
             navOpen ? 'block' : 'hidden'
-          } absolute sm:static top-16 left-0 w-full sm:w-auto bg-white sm:bg-transparent sm:flex sm:space-x-3 p-4 sm:p-0 z-10`}
+          } absolute sm:static top-16 left-0 w-full sm:w-auto bg-white bg-opacity-60 backdrop-blur-md shadow  sm:bg-transparent sm:flex sm:space-x-3 p-4 sm:p-0 z-10`}
         >
           <Link to="/" className="text-blue-500 block sm:inline-block text-lg hover:underline">
             Home
