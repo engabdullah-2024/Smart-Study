@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'; // Router Link for navigation
 // import Carabi from '../images/Carabi.jpg';
 // import Physics from '../images/Physics.jpg';
 // import English from '../images/English.jpeg';
-import Tech from '../image/Tech.jpg';
+import Tech from '../images/Tech.jpg';
 // import Taariikh from '../images/Taariikh.jpg';
 import Somali from '../images/Somali.jpg';
-import Saynis from '../image/Saynis.jpg';
+import Saynis from '../images/Saynis.jpg';
 
 const ClassEight = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
