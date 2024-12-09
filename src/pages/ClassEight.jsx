@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'; // Router Link for navigation
 import Tech from '../images/Tech.jpg';
 // import Taariikh from '../images/Taariikh.jpg';
 import Somali from '../images/Somali.jpg';
-import Saynis from '../images/Saynis.jpg';
+import Bio from '../images/Bio.jpg';
 
 const ClassEight = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
@@ -21,7 +21,7 @@ const ClassEight = () => {
     // { name: "Physics", image: Physics, pdf: "/pdf/Physics.pdf", description: "Physics explains the fundamental laws of nature and the universe." },
     // { name: "English", image: English, pdf: "/pdf/English.pdf", description: "English helps students develop communication skills in the English language." },
     { name: "Technology", image: Tech, pdfs: "/pdf/Teach.pdf", description: "Business introduces students to economics, entrepreneurship, and finance." },
-    { name: "Saynis", image: Saynis, pdf: "/pdfs/Saynis.pdf", description: " introduces students to the study of living organisms, their structure, function, growth, and evolution." },
+    { name: "Saynis", image: Bio, pdf: "/pdfs/Saynis.pdf", description: " introduces students to the study of living organisms, their structure, function, growth, and evolution." },
   ];
 
   const handleDownload = (subject) => {
