@@ -9,6 +9,8 @@ import BlogPage from './components/BlogPage';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import QuizPage from './pages/QuizPage';
+import ClassEight from './pages/ClassEight';
+import Quiz from './pages/Quiz';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/quiz" element={<QuizPage />} />
+          <Route path="/eight" element={<ClassEight />} />
+          <Route path="/quzises" element={<Quiz />} />
         </Routes>
       </div>
       <Footer/>

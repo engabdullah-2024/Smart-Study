@@ -90,8 +90,8 @@ const BlogPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8">
-      <h1 className="text-4xl font-bold text-center text-white mb-8">Blog</h1>
+    <div className="min-h-screen bg-white p-8">
+      <h1 className="text-4xl font-bold text-center text-blue-500 mb-8">Blog</h1>
 
       {/* Blog Post Form */}
       <form onSubmit={handleSubmit} className="mb-8 bg-gray-800 p-6 rounded-lg shadow-lg">

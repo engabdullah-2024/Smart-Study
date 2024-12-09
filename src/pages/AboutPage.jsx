@@ -12,10 +12,10 @@ const AboutPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-black p-8">
+    <div className="min-h-screen bg-white-8">
       <div data-aos="fade-down">
-        <h1 className="text-4xl font-bold text-center text-white">About Smart Study</h1>
-        <p className="mt-4 text-center text-white">
+        <h1 className="text-4xl font-bold text-center text-blue-500">About Smart Study</h1>
+        <p className="mt-4 text-center text-black">
           Smart Study is a dedicated platform for Grade 12 students to access free PDF resources
           tailored to enhance their learning experience. Our mission is to provide a convenient and
           user-friendly repository for important study materials across various subjects, 

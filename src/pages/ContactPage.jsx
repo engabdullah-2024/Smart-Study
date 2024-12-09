@@ -1,12 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
-  // Initialize EmailJS with your public key
-  useEffect(() => {
-    emailjs.init('QXfc6Z8o_UVu7Rh1W'); // Your Public Key
-  }, []);
-
   const sendEmail = (e) => {
     e.preventDefault();
 
