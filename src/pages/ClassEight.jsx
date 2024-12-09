@@ -47,7 +47,7 @@ const ClassEight = () => {
       <div className="animate-slideInLeft text-center">
         <h1 className="text-4xl font-bold text-blue-500">Welcome to Smart Study</h1>
         <p className="text-xl mt-4 text-black">
-          Download free PDF resources for Grade 12 subjects below!
+          Download free PDF resources for Grade 8 subjects below!
         </p>
         <Link to="/quzises">
           <button className="bg-blue-500 text-white px-6 py-2 mt-6 rounded hover:bg-blue-600">
