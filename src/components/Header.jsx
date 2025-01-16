@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaBook, FaBars, FaTimes } from 'react-icons/fa'; // Icons for menu and close
 import { Link } from 'react-router-dom';
+import { SiSmartthings } from "react-icons/si";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false); // State to toggle the nav
@@ -13,10 +14,10 @@ const Header = () => {
     <header className="bg-white p-4 shadow-lg">
       <div className="container mx-auto flex items-center justify-between">
         {/* Logo Section */}
-        <div className="flex items-center">
+        <div className="flex items-center text-3xl">
           <Link to="/" className="flex items-center">
-            <FaBook className="text-blue-500 text-2xl mr-2 mt-1" /> {/* Logo Icon */}
-            <h1 className="text-blue-500 text-2xl font-bold">Smart Study</h1> {/* Website Name */}
+            <SiSmartthings className="text-blue-500  mr-2 mt-1" /> {/* Logo Icon */}
+            <h1 className="text-blue-500 font-bold">Smart Study</h1> {/* Website Name */}
           </Link>
         </div>
 
