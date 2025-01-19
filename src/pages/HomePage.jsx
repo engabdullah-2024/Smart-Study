@@ -97,7 +97,7 @@ const HomePage = () => {
         <Link to="eight"> <h1>8aad</h1></Link>
       </div>
       <div className='text-center'>
-        <button className='bg-blue-500 text-white text-2xl font-bold p-2 rounded-lg hover:bg-blue-600'>Watch Now</button>
+       <Link to="/resources"> <button className='bg-blue-500 text-white text-2xl font-bold p-2 rounded-lg hover:bg-blue-600'>Watch Now</button></Link>
       </div>
 
       {/* Subjects Section */}
