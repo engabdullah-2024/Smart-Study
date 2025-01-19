@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaPlayCircle } from "react-icons/fa";
 import { BiMath } from "react-icons/bi";
 import { IoColorFilter } from "react-icons/io5";
+import { SlChemistry } from "react-icons/sl";
 
 const subjects = [
   {
@@ -19,6 +20,26 @@ const subjects = [
         chapter: "Chapter 2",
         lessons: [
           { lesson: "Lesson 1", videoId: "https://youtu.be/rQhM_A9xn3s?list=PLG4SdbUov5hTE-0xR5LZi7-HjjYzwl1xn" },
+         
+        ],
+      },
+    ],
+  },
+  {
+    name: "Chemistry", 
+    icon: <SlChemistry  className="text-2xl text-blue-600" />, // Added icon
+    chapters: [
+      {
+        chapter: "Chapter 1",
+        lessons: [
+          { lesson: "Lesson 1", videoId: "" },
+
+        ],
+      },
+      {
+        chapter: "Chapter 2",
+        lessons: [
+          { lesson: "Lesson 1", videoId: "https://youtu.be/XKvi41lYaWE?list=PLy03hCe_9NXU_tEEpWEijKWU8TD_QxA8p" },
          
         ],
       },
@@ -52,7 +73,7 @@ const Resources = () => {
   const [selectedLesson, setSelectedLesson] = useState(null);
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
+    <div className="min-h-screen bg-gray-100 p-6 animate-slideInLeft">
       <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">
         Grade 12 Free Video Courses
       </h1>
@@ -62,8 +83,8 @@ const Resources = () => {
             key={index}
             className="bg-white p-4 rounded-lg shadow-lg flex flex-col items-center justify-center hover:shadow-xl transition"
           >
-             {subject.icon && <div className="mb-2">{subject.icon}</div>} {/* Display icon */}
-            <h2 className="text-xl font-semibold mb-3">{subject.name}</h2>
+             {subject.icon && <div className="mb-2 animate-pulse">{subject.icon}</div>} {/* Display icon */}
+            <h2 className="text-xl font-semibold mb-3 animate-typing">{subject.name}</h2>
             <button
               onClick={() => {
                 setSelectedSubject(subject);
