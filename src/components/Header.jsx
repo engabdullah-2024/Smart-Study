@@ -54,6 +54,9 @@ const Header = () => {
           <Link to="/quiz" className="text-blue-500 block sm:inline-block text-lg hover:underline">
             Quiz
           </Link>
+          <Link to="/resources" className="text-blue-500 block sm:inline-block text-lg hover:underline">
+            Resources
+          </Link>
         </nav>
       </div>
     </header>
