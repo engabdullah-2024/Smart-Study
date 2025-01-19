@@ -96,6 +96,9 @@ const HomePage = () => {
         <h1>F4</h1>
         <Link to="eight"> <h1>8aad</h1></Link>
       </div>
+      <div className='text-center'>
+        <button className='bg-blue-500 text-white text-2xl font-bold p-2 rounded-lg hover:bg-blue-600'>Watch Now</button>
+      </div>
 
       {/* Subjects Section */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 animate-slideInRight">
