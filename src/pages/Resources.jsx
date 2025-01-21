@@ -53,6 +53,7 @@ const subjects = [
         chapter: "Chapter 1",
         lessons: [
           { lesson: "Lesson 1", videoId: "https://youtu.be/S3F2vcdJhWI?list=PLLa-YJ9_J0GiVCezQ6k6hEMaji2tlgDft" },
+          { lesson: "Lesson 2", videoId: "https://youtu.be/Su5EGdViEyQ" },
           
         ],
       },

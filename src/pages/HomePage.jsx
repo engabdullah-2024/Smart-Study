@@ -10,6 +10,7 @@ import Business from '../images/Business.jpg';
 import Taariikh from '../images/Taariikh.jpg';
 import Somali from '../images/Somali.jpg';
 import Bio from '../images/Bio.jpg';
+import { FaRegPlayCircle } from "react-icons/fa";
 
 const HomePage = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
@@ -97,7 +98,10 @@ const HomePage = () => {
         <Link to="eight"> <h1>8aad</h1></Link>
       </div>
       <div className='text-center'>
-       <Link to="/resources"> <button className='bg-blue-500 text-white text-2xl font-bold p-2 rounded-lg hover:bg-blue-600'>Watch Now</button></Link>
+       
+       <Link to="/resources"> <button className='bg-blue-500 text-white text-2xl font-bold p-2 rounded-lg hover:bg-blue-600'>Watch Now 
+       <FaRegPlayCircle />
+        </button></Link>
       </div>
 
       {/* Subjects Section */}
