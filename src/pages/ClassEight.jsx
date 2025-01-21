@@ -9,7 +9,7 @@ import Tech from '../images/Tech.jpg';
 // import Taariikh from '../images/Taariikh.jpg';
 import Somali from '../images/Somali.jpg';
 import Bio from '../images/Bio.jpg';
-
+import { FaRegPlayCircle } from "react-icons/fa";
 const ClassEight = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
 
@@ -58,6 +58,12 @@ const ClassEight = () => {
       <div className='text-blue-500 flex justify-between gap-5 text-3xl'>
        <Link to="/"> <h1>F4</h1></Link>
       <Link to="eight"> <h1>8aad</h1></Link>
+      </div>
+      <div className='text-center'>
+       
+       <Link to="/eights"> <button className='bg-blue-500 text-white text-2xl font-bold p-2 rounded-lg hover:bg-blue-600'>Watch Now 
+       <FaRegPlayCircle />
+        </button></Link>
       </div>
 
       {/* Subjects Section */}

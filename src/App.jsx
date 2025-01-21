@@ -13,6 +13,7 @@ import ClassEight from './pages/ClassEight';
 import Quiz from './pages/Quiz';
 import Resources from './pages/Resources';
 import AboutDev from './pages/AboutDev';
+import Eight from './pages/ResourcesEight';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/quzises" element={<Quiz />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/dev" element={<AboutDev />} />
+          <Route path="/eights" element={<Eight />} />
         </Routes>
       </div>
       <Footer/>
