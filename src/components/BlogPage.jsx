@@ -40,6 +40,16 @@ const BlogPage = () => {
    
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVeNh3dZd_9T3sv3BLy8WaFpofVVM8relVlg&s', // Placeholder image
     },
+    {
+      id: 5,
+      title: 'Waxbarasho',
+      author: 'Eng Abdalla',
+      date: 'Jan 21, 2025',
+      time: '05:51 AM',
+      excerpt: 'Waa Furaha Nolosha',
+   
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjXcReSvbEQt78vW7sdG7-h3yZ2JcvSqb2kQ&s', // Placeholder image
+    },
   ]);
 
   const [newPost, setNewPost] = useState({

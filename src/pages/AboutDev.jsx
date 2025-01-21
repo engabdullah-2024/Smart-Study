@@ -26,7 +26,7 @@ const AboutDev = () => {
       <div className="absolute top-16 right-5 flex items-center space-x-3">
         <button 
           onClick={() => setShowSettings(!showSettings)} 
-          className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-lg">
+          className="p-3 rounded-full bg-gray-200 dark:bg-gray-800 shadow-lg animate-spin-slow">
           <FaCog className="text-gray-900 dark:text-white" size={24} />
         </button>
 
@@ -58,13 +58,13 @@ const AboutDev = () => {
       </div>
 
       {/* Skills Section */}
-      <section className="text-center w-full max-w-2xl p-6 bg-blue-500 dark:bg-gray-800 rounded-lg shadow-md">
+      <section className="text-center w-full max-w-2xl p-6 bg-gray-200 dark:bg-gray-800 rounded-lg shadow-md">
         <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center"><FaCode className="mr-2" /> Skills</h3>
         <p>React.js, Tailwind CSS, JavaScript, Node.js, Express.js, MongoDB, UX/UI Design</p>
       </section>
 
       {/* Projects Section */}
-      <section className="text-center w-full max-w-2xl p-6 bg-blue-500 dark:bg-gray-800 rounded-lg shadow-md">
+      <section className="text-center w-full max-w-2xl p-6 bg-gray-200 dark:bg-gray-800 rounded-lg shadow-md">
         <h3 className="text-2xl font-semibold mb-4 flex items-center justify-center"><FaProjectDiagram className="mr-2" /> Projects</h3>
         <ul className="list-disc list-inside">
           <li>Fullstack Note App (MERN)</li>
