@@ -14,6 +14,8 @@ import Quiz from './pages/Quiz';
 import Resources from './pages/Resources';
 import AboutDev from './pages/AboutDev';
 import Eight from './pages/ResourcesEight';
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
           <Route path="/resources" element={<Resources />} />
           <Route path="/dev" element={<AboutDev />} />
           <Route path="/eights" element={<Eight />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
       <Footer/>

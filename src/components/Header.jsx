@@ -60,6 +60,12 @@ const Header = () => {
           <Link to="/dev" className="text-blue-500 block sm:inline-block text-lg hover:underline">
             Dev
           </Link>
+          <Link to="/register" className="text-blue-500 block sm:inline-block text-lg hover:underline">
+            Register
+          </Link>
+          <Link to="/login" className="text-blue-500 block sm:inline-block text-lg hover:underline">
+            Login
+          </Link>
         </nav>
       </div>
     </header>

@@ -6,7 +6,7 @@ const AboutDev = () => {
   const [theme, setTheme] = useState('white');
   const [showSettings, setShowSettings] = useState(false);
   
-  const themes = ['dark', 'white', 'blue', 'pink', 'red'];
+  const themes = ['dark', 'white', 'blue', 'pink', 'red', `green`,`purple`];
   
   const toggleTheme = (selectedTheme) => {
     setTheme(selectedTheme);
@@ -18,6 +18,8 @@ const AboutDev = () => {
     blue: 'bg-blue-500 text-white border-blue-700',
     pink: 'bg-pink-500 text-white border-pink-700',
     red: 'bg-red-500 text-white border-red-700',
+    green: 'bg-green-500 text-white border-red-700',
+    purple: 'bg-purple-500 text-white border-red-700',
   };
 
   return (
