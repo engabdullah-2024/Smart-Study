@@ -15,6 +15,7 @@ import HappyClients from './HappyClients';
 import Testimonials from './Testominls';
 import Events from './Events';
 import { FiPlay } from 'react-icons/fi';
+import Organisations from './Organisations';
 
 const HomePage = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
@@ -215,6 +216,7 @@ const HomePage = () => {
       <HappyClients/>
       <Testimonials/>
       <Events/>
+      <Organisations/>
     </div>
   );
 };
