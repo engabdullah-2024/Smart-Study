@@ -14,7 +14,7 @@ const Footer = () => {
         {/* Social Media Links */}
         <div className="flex space-x-6 mb-6 md:mb-0">
           <a
-            href="https://wa.me/yourphonenumber"
+            href="https://wa.me/613169435"
             target="_blank"
             rel="noopener noreferrer"
             className="text-green-500 hover:text-white"
