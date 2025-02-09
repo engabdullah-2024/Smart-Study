@@ -48,9 +48,7 @@ const Header = () => {
           <Link to="/blogpage" className="text-blue-500 block sm:inline-block text-lg hover:underline">
             Blog
           </Link>
-          <Link to="/login" className="text-blue-500 block sm:inline-block text-lg hover:underline">
-            Admin
-          </Link>
+         
           <Link to="/quiz" className="text-blue-500 block sm:inline-block text-lg hover:underline">
             Quiz
           </Link>

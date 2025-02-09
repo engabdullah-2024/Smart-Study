@@ -63,7 +63,7 @@ const examData = {
 
 const ExamSection = ({ grade, subject, exams }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-6 my-6">
+    <div className="bg-white shadow-lg rounded-lg p-6 my-6 ">
       <h2 className="text-2xl font-bold text-gray-800 mb-4">Grade {grade} - {subject} Exams</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {Object.entries(exams).map(([year, pdf], index) => (
@@ -85,7 +85,7 @@ const ExamSection = ({ grade, subject, exams }) => {
 
 const Exams = () => {
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50 p-6 ">
       <h1 className="text-3xl font-bold text-center text-gray-800">Exams</h1>
       {Object.entries(examData).map(([grade, subjects]) => (
         Object.entries(subjects).map(([subject, exams]) => (

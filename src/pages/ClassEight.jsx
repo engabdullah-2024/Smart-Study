@@ -9,6 +9,7 @@ import Tech from '../images/Tech.jpg';
 // import Taariikh from '../images/Taariikh.jpg';
 import Somali from '../images/Somali.jpg';
 import Bio from '../images/Bio.jpg';
+import { FiPlay } from 'react-icons/fi';
 import { FaRegPlayCircle } from "react-icons/fa";
 const ClassEight = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
@@ -59,12 +60,11 @@ const ClassEight = () => {
        <Link to="/"> <h1>F4</h1></Link>
       <Link to="eight"> <h1>8aad</h1></Link>
       </div>
-      <div className='text-center'>
-       
-       <Link to="/eights"> <button className='bg-blue-500 text-white text-2xl font-bold p-2 rounded-lg hover:bg-blue-600'>Watch Now 
-       <FaRegPlayCircle />
-        </button></Link>
-      </div>
+     <Link to="/eights"> <button className="flex items-center space-x-2 bg-blue-600 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-700 focus:outline-none transition duration-300 ease-in-out shadow-lg hover:scale-105 ml-[40%]">
+           <FiPlay className="text-xl" />
+           <span>Watch Now</span>
+         </button></Link>
+     
 
       {/* Subjects Section */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 animate-slideInRight ">

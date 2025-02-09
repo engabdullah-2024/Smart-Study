@@ -11,6 +11,10 @@ import Taariikh from '../images/Taariikh.jpg';
 import Somali from '../images/Somali.jpg';
 import Bio from '../images/Bio.jpg';
 import { FaRegPlayCircle } from "react-icons/fa";
+import HappyClients from './HappyClients';
+import Testimonials from './Testominls';
+import Events from './Events';
+import { FiPlay } from 'react-icons/fi';
 
 const HomePage = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
@@ -26,44 +30,7 @@ const HomePage = () => {
     { name: "Biology", image: Bio, pdf: "/pdf/Biology.pdf", description: " introduces students to the study of living organisms, their structure, function, growth, and evolution." },
   ];
 
-  const testimonials = [
-    {
-      name: "John Doe",
-      feedback: "Smart Study has transformed my learning experience. The resources are top-notch and the teachers are incredibly supportive.",
-      rating: 5,
-      image: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg"
-    },
-    {
-      name: "Jane Smith",
-      feedback: "The interactive courses and extensive library have helped me excel in my studies. I highly recommend Smart Study to all students.",
-      rating: 4,
-      image: "https://img.freepik.com/free-photo/portrait-young-woman-smiling-against-white-wall_23-2148218617.jpg"
-    },
-    {
-      name: "Michael Johnson",
-      feedback: "The certifications I earned from Smart Study have opened up new career opportunities for me. Thank you, Smart Study!",
-      rating: 5,
-      image: "https://img.freepik.com/free-photo/portrait-smiling-young-man_23-2148208763.jpg"
-    },
-    {
-      name: "Emily Davis",
-      feedback: "Smart Study's resources are comprehensive and easy to understand. I've improved my grades significantly.",
-      rating: 5,
-      image: "https://img.freepik.com/free-photo/portrait-young-woman-smiling-against-white-wall_23-2148218617.jpg"
-    },
-    {
-      name: "David Brown",
-      feedback: "The support from the Smart Study team has been amazing. They are always ready to help.",
-      rating: 4,
-      image: "https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg"
-    },
-    {
-      name: "Sophia Wilson",
-      feedback: "The interactive courses have made learning fun and engaging. I highly recommend Smart Study.",
-      rating: 5,
-      image: "https://img.freepik.com/free-photo/portrait-young-woman-smiling-against-white-wall_23-2148218617.jpg"
-    }
-  ];
+ 
 
   const handleDownload = (subject) => {
     const link = document.createElement('a');
@@ -97,12 +64,10 @@ const HomePage = () => {
         <h1>F4</h1>
         <Link to="eight"> <h1>8aad</h1></Link>
       </div>
-      <div className='text-center'>
-       
-       <Link to="/resources"> <button className='bg-blue-500 text-white text-2xl font-bold p-2 rounded-lg hover:bg-blue-600'>Watch Now 
-       <FaRegPlayCircle />
-        </button></Link>
-      </div>
+     <Link to="/resources"> <button className="flex items-center space-x-2 bg-blue-600 text-white py-2 px-6 rounded-full text-lg hover:bg-blue-700 focus:outline-none transition duration-300 ease-in-out shadow-lg hover:scale-105 ml-[40%]">
+      <FiPlay className="text-xl" />
+      <span>Watch Now</span>
+    </button></Link>
 
       {/* Subjects Section */}
       <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 animate-slideInRight">
@@ -246,39 +211,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="my-12">
-        <h2 className="text-3xl font-bold text-blue-500 dark:text-white mb-6">Testimonials</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white dark:bg-gray-800 border-blue-500 dark:border-white border-4 rounded-lg shadow-lg p-6 transform hover:scale-105 duration-300"
-            >
-              <div className="flex items-center mb-4">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full mr-4"
-                />
-                <div>
-                  <h3 className="text-xl font-bold text-blue-500 dark:text-white">{testimonial.name}</h3>
-                  <div className="flex">
-                    {Array.from({ length: testimonial.rating }, (_, i) => (
-                      <FaStar key={i} className="text-yellow-500" />
-                    ))}
-                  </div>
-                </div>
-              </div>
-              <p className="text-blue-500 dark:text-white mb-4">
-                <FaQuoteLeft className="inline mr-2" />
-                {testimonial.feedback}
-                <FaQuoteRight className="inline ml-2" />
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+     
+      <HappyClients/>
+      <Testimonials/>
+      <Events/>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import AboutPage from './pages/AboutPage'; // Import the AboutPage component
 import ContactPage from './pages/ContactPage'; // Import the ContactPage component
 import Footer from './components/Footer';
 import BlogPage from './components/BlogPage';
-import LoginPage from './pages/LoginPage';
+
 import DashboardPage from './pages/DashboardPage';
 import QuizPage from './pages/QuizPage';
 import ClassEight from './pages/ClassEight';
@@ -17,6 +17,9 @@ import Eight from './pages/ResourcesEight';
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Exams from './pages/Exams';
+import HappyClients from './pages/HappyClients';
+import Events from './pages/Events';
+import Testimonials from './pages/Testominls';
 
 function App() {
   return (
@@ -31,7 +34,7 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/blogpage" element={<BlogPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          
           <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/eight" element={<ClassEight />} />
@@ -42,6 +45,9 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/exams" element={<Exams />} />
+          <Route path="/happy" element={<HappyClients />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/testominls" element={<Testimonials />} />
         </Routes>
       </div>
       <Footer/>
