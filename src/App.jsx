@@ -16,6 +16,7 @@ import AboutDev from './pages/AboutDev';
 import Eight from './pages/ResourcesEight';
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Exams from './pages/Exams';
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/eights" element={<Eight />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/exams" element={<Exams />} />
         </Routes>
       </div>
       <Footer/>

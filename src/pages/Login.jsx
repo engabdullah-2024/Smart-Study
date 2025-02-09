@@ -16,7 +16,7 @@ function Login() {
             if (response.data.success) {
                 alert("Login successfully");
                 localStorage.setItem("user", JSON.stringify(response.data.user));
-                navigate("/notes")
+                navigate("/")
             } else {
                 alert("Incorrect email or password");
             }

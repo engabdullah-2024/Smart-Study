@@ -66,6 +66,9 @@ const Header = () => {
           <Link to="/login" className="text-blue-500 block sm:inline-block text-lg hover:underline">
             Login
           </Link>
+          <Link to="/exams" className="text-blue-500 block sm:inline-block text-lg hover:underline">
+            Exams
+          </Link>
         </nav>
       </div>
     </header>
