@@ -21,6 +21,7 @@ import HappyClients from './pages/HappyClients';
 import Events from './pages/Events';
 import Testimonials from './pages/Testominls';
 import Organisations from './pages/Organisations';
+import ChatBot from './pages/ChatBot';
 
 function App() {
   return (
@@ -50,6 +51,7 @@ function App() {
           <Route path="/events" element={<Events />} />
           <Route path="/testominls" element={<Testimonials />} />
           <Route path="/org" element={<Organisations />} />
+          <Route path="/chat" element={<ChatBot />} />
         </Routes>
       </div>
       <Footer/>
