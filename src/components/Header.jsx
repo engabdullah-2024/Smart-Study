@@ -61,6 +61,9 @@ const Header = () => {
           <Link to="/chat" className="text-blue-500 block sm:inline-block text-lg hover:underline">
             AI
           </Link>
+          <Link to="/gradetwelve" className="text-blue-500 block sm:inline-block text-lg hover:underline">
+            Grade 12
+          </Link>
           <Link to="/register" className="text-blue-500 block sm:inline-block text-lg hover:underline">
             Register
           </Link>

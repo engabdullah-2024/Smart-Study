@@ -2,18 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-    --bg-color: white;
-    --text-color: black;
-  }
-  
-  .dark {
-    --bg-color: black;
-    --text-color: white;
-  }
-  
+  /* Light Theme */
+  --color-primary: 17 24 39;
+  --color-secondary: 249 250 251;
+  --color-accent: 79 70 229;
+  --color-text: 17 24 39;
+  --color-border: 229 231 235;
+}
+
+.dark {
+  /* Dark Theme */
+  --color-primary: 249 250 251;
+  --color-secondary: 17 24 39;
+  --color-accent: 129 140 248;
+  --color-text: 249 250 251;
+  --color-border: 55 65 81;
+}
+
+@layer base {
   body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    @apply bg-secondary text-text transition-colors duration-300;
   }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary;
+  }
+
+  /* Custom animations */
+  .typing-cursor {
+    @apply border-r-2 border-accent;
+  }
+}
+
+@layer components {
+  .theme-toggle {
+    @apply p-2 rounded-lg bg-accent text-secondary dark:text-primary transition-all;
+  }
+
+  .animated-text {
+    @apply overflow-hidden whitespace-nowrap border-r-2 border-accent;
+  }
+}

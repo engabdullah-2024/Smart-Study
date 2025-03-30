@@ -1,11 +1,18 @@
-// tailwind.config.js
 module.exports = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx}', // Ensure these paths match your file structure
+    './src/**/*.{js,ts,jsx,tsx}',
     './public/index.html',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
+      colors: {
+        primary: 'rgb(var(--color-primary) / <alpha-value>)',
+        secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+        accent: 'rgb(var(--color-accent) / <alpha-value>)',
+        text: 'rgb(var(--color-text) / <alpha-value>)',
+        border: 'rgb(var(--color-border) / <alpha-value>)',
+      },
       keyframes: {
         typing: {
           '0%': { width: '0%' },

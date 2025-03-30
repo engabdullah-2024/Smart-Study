@@ -11,8 +11,8 @@ const Organisations = () => {
   return (
     <div className="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl font-semibold text-gray-900">Our Organisations</h2>
-        <p className="mt-4 text-lg text-gray-600">Explore our affiliated organisations.</p>
+        <h2 className="text-3xl font-semibold text-gray-900">Our Partners</h2>
+        <p className="mt-4 text-lg text-gray-600">Explore our affiliated Partners.</p>
 
         <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-10">
           {/* Alfurqan Modern School */}

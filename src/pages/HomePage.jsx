@@ -13,9 +13,13 @@ import Bio from '../images/Bio.jpg';
 import { FaRegPlayCircle } from "react-icons/fa";
 import HappyClients from './HappyClients';
 import Testimonials from './Testominls';
-import Events from './Events';
+
 import { FiPlay } from 'react-icons/fi';
 import Organisations from './Organisations';
+import Services from './Services';
+import GradeTweleve from './GradeTweleve';
+
+
 
 const HomePage = () => {
   const [selectedSubject, setSelectedSubject] = useState(null); // Track clicked subject
@@ -214,9 +218,13 @@ const HomePage = () => {
 
      
       <HappyClients/>
+      <Services/>
       <Testimonials/>
-      <Events/>
+      
+     
       <Organisations/>
+      <GradeTweleve/>
+      
     </div>
   );
 };
